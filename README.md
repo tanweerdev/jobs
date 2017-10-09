@@ -1,3 +1,5 @@
+See https://elixirforum.com/t/belongs-to-assoc-changeset-not-being-inserted-into-database/9188
+
 ```sh
 $ mix ecto.setup
 $ iex -S mix
