@@ -9,7 +9,7 @@ defmodule Test.Repo.Migrations.AddStuff do
     end
 
     create table(:jobs) do
-      add :status_id, references(:job_statuses, column: "id", type: :string), nil: false
+      add :status_id, references(:job_statuses, column: "id", type: :string), null: false
 
       timestamps()
     end
