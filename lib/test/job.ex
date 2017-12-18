@@ -5,7 +5,10 @@ defmodule Test.Job do
     belongs_to :status, Test.JobStatus,
       foreign_key: :status_id,
       references: :id,
-      type: :string
+      type: :string,
+      define_field: false
+
+    field :status_id, :string, read_after_writes: true
 
     timestamps()
   end
